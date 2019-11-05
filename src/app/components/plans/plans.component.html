@@ -1,0 +1,133 @@
+<div class="container p-0">
+    <div class="row justify-content-center">
+        <div class="col-5">
+
+            <div class="container mb-3">
+                <button type="button" class=" btn cyan text-advertising rounded-pill px-4 ">
+                    Texto
+                </button>
+            </div>
+
+
+            <h3 class="title-section col-md-10 pl-0">Contenido extra Lorem ipsum dolor sit ipsum dolor
+                Lorem ipsum dolor sit</h3>
+
+            <h6 class="text-description font-weight-normal">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </h6>
+
+            <div class="item">
+                <a href="#">
+                    <span class="badge bg-cyan notify-badge-right text-advertising">10% OFF</span>
+
+                    <div class="btn-group btn-group-toggle pt-1" data-toggle="buttons">
+                        <label class="btn btn-primary btn-lg">
+                            <input type="radio" name="options" id="option1" autocomplete="off" checked> <span
+                                class="mx-4">Mes</span>
+                        </label>
+                        <label class="btn btn-light btn-lg border">
+                            <input type="radio" name="options" id="option2" autocomplete="off"> <span
+                                class="mx-4 text-muted">Año</span>
+                        </label>
+                    </div>
+                </a>
+            </div>
+
+        </div>
+        <div class="col-12 col-md-7 col-sm-12">
+            <div class="row p-4 m-2 justify-content-center">
+                <div class="col-12 col-md-6  col-lg-6 col-sm-12">
+
+                    <div class="card shadow-sm bg-white" style="width: 18rem;">
+                        <div class="card-img-top p-3 mb-2 bg-primary text-white">
+                            <h4 class="my-2">Plan 1</h4>
+                            <ul class="list-inline">
+                                <li class="list-inline-item">
+                                    <h1 class="font-weight-bold display-4 px-4">
+                                        <h6 class="notify-badge-left text-advertising" style="top: 55px; left: 11px;">$
+                                        </h6>
+                                        22
+                                    </h1>
+                                </li>
+                                <li class="ml-n3 list-inline-item">
+                                    <h6>/month</h6>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="card-body p-0 mt-3">
+
+                            <ul class="list-group">
+                                <li class="list-group-item d-flex align-items-center border-0 ml-2"
+                                    *ngFor="let opt of  [1,2,3,4]; index as i ">
+
+                                    <i class="material-icons rounded-circle"
+                                        [ngClass]="{'btn-blue' :  i != 3 ,'text-muted' :  i == 3 }"
+                                        style="width: 10%;">done</i>
+                                    <span class="mx-2  text-body"> Opción {{opt}}</span>
+
+                                </li>
+                            </ul>
+
+                            <div class="text-center my-4">
+                                <button type="button" class="btn btn-blue btn-lg"><span
+                                        class="text-advertising px-5 py-2">Opcion 1</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <div class="col-12 col-md-6  col-lg-6 col-sm-12 ">
+
+                    <div class="card shadow-sm bg-white" style="width: 18rem;">
+                        <div class="card-img-top p-3 mb-2 bg-primary text-white">
+                            <h4 class="my-2">Plan 2</h4>
+                            <ul class="list-inline">
+                                <li class="list-inline-item">
+                                    <h1 class="font-weight-bold display-4 px-4">
+                                        <h6 class="notify-badge-left text-advertising" style="top: 55px; left: 11px;">$
+                                        </h6>
+                                        99
+                                    </h1>
+                                </li>
+                                <li class="list-inline-item">
+                                    <h6>/month</h6>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="card-body p-0 mt-3">
+                            <ul class="list-group">
+                                <li class="list-group-item d-flex align-items-center border-0 ml-2"
+                                    *ngFor="let opt of  [1,2,3,4,5]; index as i ">
+
+                                    <i class="material-icons rounded-circle btn-blue" style="width: 10%;">done</i>
+                                    <span class="mx-2  text-body"> Opción {{opt}}</span>
+
+                                </li>
+                            </ul>
+                            <div class="text-center my-4">
+                                <button type="button" class="btn btn-blue btn-lg"><span
+                                        class="text-advertising px-5 py-2">Opcion 2</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-center w-100 my-3">
+
+                    <ul class="list-inline">
+                        <li class="list-inline-item">
+                            <p><abbr title="HyperText Markup Language" class="text-description">*Terminos </abbr></p>
+                        </li>
+                        <li class="list-inline-item">
+                            <span class="text-description"> y Condiciones</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

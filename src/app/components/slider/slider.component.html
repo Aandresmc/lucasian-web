@@ -1,0 +1,128 @@
+<div id="carouselExampleIndicators" class="carousel slide carousel-multi-item" data-ride="carousel">
+
+    <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active" style="background-color: black;"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1" style="background-color: black;"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2" style="background-color: black;"></li>
+    </ol>
+
+
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card mb-2">
+                        <img class="card-img-top" src="assets/foto1.PNG" alt="Card image cap">
+                        <div class="card-body text-center p-5 w-100">
+                            <h4 class="card-title text-white my-3">Some quick example text to build on the card
+                                title and
+                                make up the bulk
+                                of
+                                the
+                                card's content.</h4>
+                            <h5 class="text-description font-weight-bold my-4">Elberth Agreda</h5>
+                            <img src="assets/img3.jpg" class="rounded-circle mt-n3" width="50" alt="client">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 clearfix d-none d-md-block">
+                    <div class="card mb-2 shadow p-3 mb-5 bg-white border-0" style="height:97%">
+
+                        <div class="card-body text-center py-3 w-100">
+
+                            <h5 class="text-body text-center">Some quick example text to build on the card
+                                title and make up</h5>
+
+                            <h5 class="font-weight-bold mt-5">Milena paez</h5>
+
+                            <img src="assets/img2.jpg" class="rounded-circle mt-1" width="50" alt="client">
+
+                            <div class="my-5">
+                                <button type="button" class="btn btn-blue btn-lg"><span
+                                        class="text-advertising px-5 py-2">Read More</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 clearfix d-none d-md-block">
+                    <div class="card mb-2">
+                        <img class="card-img-top" src="assets/foto2.PNG" alt="Card image cap">
+                        <div class="card-body text-center p-5 w-100">
+                            <h4 class="card-title text-white my-3">Some quick example text to build on the card
+                                title and
+                                make up the bulk
+                                of
+                                the
+                                card's content.</h4>
+                            <h5 class="text-description font-weight-bold my-4">Lucia carvajal</h5>
+                            <img src="assets/img1.jpg" class="rounded-circle mt-n3" width="50" alt="client">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="carousel-item" *ngFor="let client of users | slides">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card mb-2">
+                        <img class="card-img-top" src="assets/foto1.PNG" alt="Card image cap">
+                        <div class="card-body text-center p-5 w-100">
+                            <h4 class="card-title text-white my-3"> {{client[0]['title']}}</h4>
+                            <h5 class="text-description font-weight-bold my-4">Elberth Agreda</h5>
+                            <img src="assets/img3.jpg" class="rounded-circle mt-n3" width="50" alt="client">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 clearfix d-none d-md-block">
+                    <div class="card mb-2 shadow p-3 mb-5 bg-white border-0" style="height:97%">
+
+                        <div class="card-body text-center py-3 w-100">
+
+                            <h5 class="text-body text-center"> {{client[0]['title']}}</h5>
+
+                            <h5 class="font-weight-bold mt-5">Milena paez</h5>
+
+                            <img src="assets/img2.jpg" class="rounded-circle mt-1" width="50" alt="client">
+
+                            <div class="my-5">
+                                <button type="button" class="btn btn-blue btn-lg"><span
+                                        class="text-advertising px-5 py-2">Read More</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 clearfix d-none d-md-block">
+                    <div class="card mb-2">
+                        <img class="card-img-top" src="assets/foto2.PNG" alt="Card image cap">
+                        <div class="card-body text-center p-5 w-100">
+                            <h4 class="card-title text-white my-3">Some quick example text to build on the card
+                                {{client[0]['title']}}</h4>
+                            <h5 class="text-description font-weight-bold my-4">Lucia carvajal</h5>
+                            <img src="assets/img1.jpg" class="rounded-circle mt-n3" width="50" alt="client">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
+</div>

@@ -1,0 +1,49 @@
+<header>
+    <ul class="nav justify-content-end py-2 mr-5">
+        <li class="nav-item">
+            <button type="button" class="btn  btn-small"><span class="text-muted">Opcion</span></button>
+        </li>
+        <li class="nav-item">
+            <button type="button" class="btn  btn-small"><span class="text-muted">Contacts</span></button>
+        </li>
+        <li class="nav-item">
+            <button type="button" class="btn  btn-small">
+                <span class="text-muted"> <i class="material-icons">search</i>
+                </span>
+            </button>
+        </li>
+        <li class="nav-item">
+            <button type="button" class="btn  btn-small">
+                <span class="text-muted">
+                    <i class="material-icons">shopping_cart</i>
+                </span>
+            </button>
+        </li>
+        <li class="nav-item">
+            <button type="button" class="btn  btn-small">
+                <span class="text-muted">
+                    <i class="material-icons">account_circle</i>
+                </span>
+            </button>
+        </li>
+    </ul>
+</header>
+<nav class="navbar navbar-light p-0 mt-n4">
+    <a class="navbar-brand ml-5" href="#">
+        <img src="assets/lucasian-logo.png" height="80" class="d-inline-block align-top" alt="logo">
+    </a>
+    <form class="form-inline mr-5">
+        <div class="dropdown ml-2" *ngFor="let opt of [1,2,3,4,5];">
+            <button class="btn  dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                Menu{{opt}}
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="#">Action</a>
+            </div>
+        </div>
+
+        <button type="button" class="btn btn-primary p-2 pl-3 pr-3  ml-4">Login</button>
+
+    </form>
+</nav>
