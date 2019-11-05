@@ -11,8 +11,11 @@
             <img [src]="service.image" class="img-fluid mx-auto d-block" alt="img-publicitaria">
             <h5 class="my-2 text-center font-weight-bold">{{service.title}}</h5>
             <p class="text-center text-description">{{service.description}}</p>
-            <img [src]="service.arrow" class="img-fluid mx-auto d-block d-md-none" [ngClass]="{' img-fluid rotate': i == 2}"
-                alt="img-publicitaria">
+            <div class="row  align-items-center justify-content-center">
+                <img class="mx-auto" [src]="service.arrow" [ngClass]="{'img-fluid rotate': i == 2}"
+                    alt="img-publicitaria">
+            </div>
+
         </div>
     </div>
     <div class="row align-items-center justify-content-center">
