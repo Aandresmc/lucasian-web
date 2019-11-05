@@ -2,6 +2,9 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.17.
 
+## Look page
+https://steel-aileron-211400.firebaseapp.com/lucasian/home
+
 ## Especificaciones
 1. Angular 8 Componentes, directivas, pipes, módulos, servicios.
 2. Consumir el servicio rest de JSONPlaceholder para obtener los usuarios y
