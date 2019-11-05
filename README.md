@@ -11,7 +11,7 @@ http://jsonplaceholder.typicode.com/
 
 ## ScreenShots
 
-![image](https://user-images.githubusercontent.com/28877837/68216289-ac341e80-ffae-11e9-9973-e4d03b9f2b58.png)
+![image](https://user-images.githubusercontent.com/28877837/68217377-80199d00-ffb0-11e9-9e51-ce0266e0361d.png)
 
 
 ![image](https://user-images.githubusercontent.com/28877837/68216357-c66dfc80-ffae-11e9-887a-853d78af7352.png)
